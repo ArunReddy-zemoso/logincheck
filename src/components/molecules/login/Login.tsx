@@ -29,7 +29,7 @@ export class Login extends React.Component<LoginBoxProps, StateProps> {
       credentials: props.AccountsData,
       input_username: "",
       input_password: "",
-      message: "Enter your Credentials and click on submit",
+      message: "Enter your username and password",
     };
     this.handleUsernameChange = this.handleUsernameChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
