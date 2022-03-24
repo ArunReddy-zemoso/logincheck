@@ -13,7 +13,7 @@ export const Password = (props: PasswordProps) => {
   return (
     <div>
       <Input
-        placeholder="Password"
+        placeholder="password"
         inputProps={ariaLabel}
         onChange={props.handleChange}
         type="password"
