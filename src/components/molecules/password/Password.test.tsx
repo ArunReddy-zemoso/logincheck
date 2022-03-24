@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Password } from "./Password";
 
-describe("Password Field tests", () => {
-  test("Check Password", () => {
+describe("Password tests", () => {
+  test("Change Password", () => {
     const onChange = jest.fn();
     render(
       <Password value="" handleChange={onChange} variant="light" />
@@ -10,7 +10,7 @@ describe("Password Field tests", () => {
     const passwordField = screen.getByPlaceholderText("password");
     expect(passwordField).toHaveDisplayValue("");
   });
-  test("Change Password", () => {
+  test("Check Password", () => {
     const onChange = jest.fn();
     render(
       <Password value="" handleChange={onChange} variant="light" />
